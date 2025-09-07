@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates xml:space="preserve">
-
-      <t t-name="awesome_dashboard.AwesomeDashboard">
+    <t t-name="awesome_dashboard.AwesomeDashboard">
         <div class="o_sales_dashboard" style="font-family: Arial, sans-serif; padding: 20px;">
             <h1 style="margin-bottom: 20px; color: #333;">📊 Sales Dashboard</h1>
             <div id="dashboard-widgets" class="dashboard-grid" 
                  style="display: flex; flex-wrap: wrap; gap: 20px;">
 
-                <!-- KPI Card Example -->
                 <div class="kpi-card" data-category="category1"
                      style="flex: 1 1 200px; background: #fff; padding: 20px; border-radius: 12px;
                             box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: grab; transition: transform 0.2s;">
@@ -28,19 +26,14 @@
                     <div style="font-size: 14px; color: #777;">COGS: <span class="value">0</span></div>
                 </div>
 
-                <!-- Add more KPI cards as needed -->
-
             </div>
         </div>
 
         <style>
-            /* Hover animation for cards */
             .kpi-card:hover {
                 transform: translateY(-5px);
                 box-shadow: 0 6px 15px rgba(0,0,0,0.15);
             }
-
-            /* Responsive for smaller screens */
             @media (max-width: 600px) {
                 .dashboard-grid {
                     flex-direction: column;
@@ -48,5 +41,4 @@
             }
         </style>
     </t>
-
 </templates>
